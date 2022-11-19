@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Beer App
+
+An application to demonstrate the API calls, and deisgn using React Bootstrap library using ReactJS.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
