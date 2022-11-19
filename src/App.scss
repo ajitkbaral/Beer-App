@@ -1,0 +1,18 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.nav-tabs {
+  button {
+    color: #6b6969;
+  }
+  .nav-item {
+    font-size: 24px;
+    font-weight: 500;
+
+    .active {
+      color: #000;
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+      text-decoration-color: rgb(3, 70, 194);
+    }
+  }
+}

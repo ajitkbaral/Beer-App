@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
+import BeerList from "./components/Lists/BeerList";
+import { ALL_BEERS, MY_BEERS } from "./constants";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container pb-5">
+      <div>
+        <Tabs defaultActiveKey={ALL_BEERS.key} id="beer-tab" className="mb-3">
+          <Tab eventKey={ALL_BEERS.key} title={ALL_BEERS.value}>
+            <BeerList type={ALL_BEERS.key} />
+          </Tab>
+          <Tab eventKey={MY_BEERS.key} title={MY_BEERS.value}>
+            <BeerList type={MY_BEERS.key} />
+          </Tab>
+        </Tabs>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

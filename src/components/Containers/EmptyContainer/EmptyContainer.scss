@@ -1,0 +1,13 @@
+.empty-section {
+  margin-top: 40px;
+  height: 400px;
+  .message {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
